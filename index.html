@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <!-- Google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +22,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'btn-primary': '#ABEF5F',
                     }
                 }
             }
@@ -30,11 +31,63 @@
 </head>
 
 <body>
-    <header>
-        <h1>hello</h1>
+    <header class="mt-14 container mx-auto">
+        <!-- NAVBAR STARTS -->
+        <nav class="flex justify-between items-center mb-10">
+            <div>
+                <h1 class="font-extrabold text-3xl text-gray-900">
+                    <i class="fa-solid fa-arrow-right -rotate-45 rounded-full p-2 bg-btn-primary"></i> Rinterio
+                </h1>
+            </div>
+            <div class="hidden lg:flex gap-9 text-base text-gray-400">
+                <a class="font-extrabold text-gray-600" href="">Home</a>
+                <a href="">Services</a>
+                <a href="">Portfolio</a>
+                <a href="">Blogs</a>
+                <a href="">Contact Us</a>
+            </div>
+            <!-- Bar for small devices -->
+            <div class="lg:hidden"><i class="fa-solid fa-bars border rounded-full p-2"></i>
+
+            </div>
+
+            <div class="hidden lg:block space-x-3">
+                <i class="fa-solid fa-magnifying-glass border rounded-full p-4 "></i>
+                <i class="fa-solid fa-cart-shopping border rounded-full p-4"></i>
+                <button class="font-extrabold text-gray-900 text-xl bg-btn-primary rounded-[32px] px-5 py-3"> Book
+                    Consult
+                    <i class="fa-solid fa-arrow-right -rotate-45 rounded-full p-2 bg-black text-white"></i></button>
+            </div>
+        </nav>
+
+        <!-- Banner portion starts -->
+        <section class="flex flex-col justify-center items-center mb-24">
+            <!-- Image section -->
+            <div>
+                <img src="assets/banner.png" alt="">
+            </div>
+
+            <!-- Text section -->
+            <div class="text-center mt-6">
+                <h1 class="font-extrabold text-6xl text-gray-900">A barn house of this design has a <br> striking
+                    appearance
+                </h1>
+
+                <p class="font-medium text-base text-gray-600 mt-6 mb-8 w-3/4 mx-auto">The barn house captivates with its blend of rustic charm
+                    and
+                    modern sophistication, featuring weathered
+                    wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+
+                <button
+                    class="w-full md:w-52 font-bold text-xl text-gray-900 bg-btn-primary bg-opacity-50 rounded-[32px] px-5 py-3">View
+                    Details <i class="fa-solid fa-arrow-right -rotate-45 bg-btn-primary rounded-full p-2"></i></button>
+            </div>
+        </section>
     </header>
 
-    <main></main>
+    <main class="container mx-auto">
+
+    </main>
 
     <footer></footer>
 </body>
